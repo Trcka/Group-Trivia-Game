@@ -1,61 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 2</title>
-    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8"/>
 
-  <!-- new navbar -->
-  <nav class="top-bar topbar-responsive">
-  <div class="top-bar-title">
-    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-    <!--   <button class="menu-icon" type="button" data-toggle></button> -->
-    </span>
-    <!-- <a class="topbar-responsive-logo" href="#"><strong>e=mcHammer -->
-    </strong></a>
-  </div>
-  <div id="topbar-responsive" class="topbar-responsive-links">
-  <img src="./img/brainLogoTransparent.png" alt="logo" class="logo">
-    <div class="top-bar-right">
-      <ul class="menu simple vertical medium-horizontal">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Leaderboard</a></li>
-       <!--  <li><a href="#">Works</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li> -->
-        <li>
-          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-        </li>
-      </ul>
+    <!-- Ensure that everything scales appropriately on a mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- Let's borrow a cool looking Font from Google -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="gameArea">
+        <!-- This is where the templates defined below will be used -->
     </div>
-  </div>
-</nav>
 
-    <!-- End nav Bar -->
-  <!--  main -->
-	<div class="container">
+    <!-- Main Title Screen that appears when the page loads for the first time -->
+    <script id="intro-screen-template" type="text/template">
 
-  <img class= "main" src= "./img/mainLogoTransparent.png" alt="mainLogo">
-  <br>
-  <br>
-  <!-- <button class="button-rounded-hover">Play Now</button> -->
-<!--   use a tag for links to other locations -->
-<a class="button button-rounded-hover">Play Now</a>
+        <div class="titleWrapper">
 
-<!-- use button tag for on page actions -->
+            <div class="title">
+                ANAGRAMMATIX
+            </div>
 
+            <div class="buttons">
 
+                <button id="btnCreateGame" class="btn left">CREATE</button>
+                <button id="btnJoinGame" class="btn right">JOIN</button>
+                <div style="clear:both"></div>
+            </div>
 
-</div>
+        </div>
 
+    </script>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-   <link rel="stylesheet" href="css/style.css">
-   
-  </body>
+    <!-- This screen appears when a user clicks "CREATE" on the Title Screen -->
+    <script id="create-game-template" type="text/template">
+        <div class="createGameWrapper">
+
+            <div class="info">Open this site on your mobile device:</div>
+            <div id="gameURL" class="infoBig">Error!</div>
+
+            <div class="info">Then click <strong>JOIN</strong> and <br/> enter the following Game ID:</div>
+            <div id="spanNewGameCode" class="gameId">Error!</div>
+
+            <div id="playersWaiting"></div>
+        </div>
+    </script>
+
+    <!-- This scrreen appears when a player clicks "JOIN" on the Title Screen -->
+    <script id="join-game-template" type="text/template">
+        <div class="joinGameWrapper">
+            <div class="info">
+                <label for="inputPlayerName">Your Name:</label>
+                <input id="inputPlayerName" type="text" />
+            </div>
+
+            <div class="info">
+                <label for="inputGameId">Game ID:</label>
+                <input id="inputGameId" type="text"/>
+            </div>
+
+            <div class="info buttons">
+                <button id="btnStart" class="btn">Start</button>
+                <div id="playerWaitingMessage"></div>
+            </div>
+        </div>
+    </script>
+
+    <!-- This is the 'Host' screen. It displays the word for each player to match -->
+    <script id="host-game-template" type="text/template">
+        <div id="wordArea">
+            <div id="hostWord">5</div>
+        </div>
+        <div id="playerScores">
+            <div id="player1Score" class="playerScore">
+                <span class="score">0</span><span class="playerName">Player 1</span>
+            </div>
+            <div id="player2Score" class="playerScore">
+                <span class="playerName">Player 2</span><span class="score">0</span>
+            </div>
+        </div>
+    </script>
+
+    <!-- JavaScript Libraries -->
+
+    <!-- jQuery! -->
+    <script src="libs/jquery-2.0.2.min.js"></script>
+
+    <!-- TextFit resizes text to fill a container.
+        It's used so the titles and game words fit properly on any size screen.
+        https://github.com/STRML/textFit   -->
+    <script src="libs/textFit.min.js"></script>
+
+    <!-- FastClick is used to eliminate the 300ms delay when clicking items on a mobile device
+        https://github.com/ftlabs/fastclick -->
+    <script src="libs/fastclick.js"></script>
+
+    <!-- If Socket.IO is used with Express, then the /socket.io/ path will
+        serve the proper Socket.IO javascript files used by the browser -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- app.js is where all the client-side Anagrammatix game logic -->
+    <script src="app.js"></script>
+
+</body>
 </html>

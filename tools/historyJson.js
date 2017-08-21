@@ -1,4 +1,4 @@
-{
+var history = {
 "response_code": 0,
 "results": [
 {

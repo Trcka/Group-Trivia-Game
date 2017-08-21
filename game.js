@@ -109,9 +109,7 @@ function playerJoinGame(data) {
     }
 }
 
-*
- * A player has tapped a word in the word list.
- * @param data gameId
+
  
 function playerAnswer(data) {
     // console.log('Player ID: ' + data.playerId + ' answered a question with: ' + data.answer);
@@ -161,20 +159,19 @@ function getWordData(i){
     // Randomize the order of the available words.
     // The first element in the randomized array will be displayed on the host screen.
     // The second element will be hidden in a list of decoys as the correct answer
-    var words = shuffle(board.results[i].correct_answer);
 
     // Randomize the order of the decoy words and choose the first 5
     var decoys = shuffle(board.results[i].incorrect_answers).slice(0,3);
 
     // Pick a random spot in the decoy list to put the correct answer
-    var rnd = Math.floor(Math.random() * 5);
-    decoys.splice(rnd, 0, words[1]);
+    var rnd = Math.floor(Math.random() * 4);
+    decoys.splice(rnd, 0, board.results[i].correct_answer);
 
     // Package the words into a single object.
     var wordData = {
         round: i,
-        word : words[0],   // Displayed Word
-        answer : words[1], // Correct Answer
+        word : board.results[i].question,   // Displayed Word
+        answer : board.results[i].correct_answer, // Correct Answer
         list : decoys      // Word list for player (decoys and answer)
     };
 

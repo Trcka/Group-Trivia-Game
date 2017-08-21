@@ -1,5 +1,4 @@
-{
-"response_code": 0,
+var computer = {
 "results": [
 {
 "category": "Science: Computers",
