@@ -1,6 +1,13 @@
 var io;
 var gameSocket;
 
+var board = require('./tools/boardGameJson');
+var computer = require('./tools/computerSc');
+var film = require('./tools/FilmJson');
+var history = require('./tools/historyJson');
+var music = require('./tools/musicJson');
+
+
 /**
  * This function is called by index.js to initialize a new game instance.
  *
@@ -54,7 +61,7 @@ function hostStartGame(gameId) {
  * @param data Sent from the client. Contains the current round and gameId (room)
  */
 function hostNextRound(data) {
-    if(data.round < wordPool.length ){
+    if(data.round < board.results.length ){
         // Send a new set of words back to the host and players.
         sendWord(data.round, data.gameId);
     } else {
@@ -102,10 +109,10 @@ function playerJoinGame(data) {
     }
 }
 
-/**
+*
  * A player has tapped a word in the word list.
  * @param data gameId
- */
+ 
 function playerAnswer(data) {
     // console.log('Player ID: ' + data.playerId + ' answered a question with: ' + data.answer);
 
@@ -154,10 +161,10 @@ function getWordData(i){
     // Randomize the order of the available words.
     // The first element in the randomized array will be displayed on the host screen.
     // The second element will be hidden in a list of decoys as the correct answer
-    var words = shuffle(wordPool[i].words);
+    var words = shuffle(board.results[i].correct_answer);
 
     // Randomize the order of the decoy words and choose the first 5
-    var decoys = shuffle(wordPool[i].decoys).slice(0,5);
+    var decoys = shuffle(board.results[i].incorrect_answers).slice(0,3);
 
     // Pick a random spot in the decoy list to put the correct answer
     var rnd = Math.floor(Math.random() * 5);
@@ -208,54 +215,3 @@ function shuffle(array) {
  *
  * @type {Array}
  */
-var wordPool = [
-    {
-        "words"  : [ "sale","seal","ales","leas" ],
-        "decoys" : [ "lead","lamp","seed","eels","lean","cels","lyse","sloe","tels","self" ]
-    },
-
-    {
-        "words"  : [ "item","time","mite","emit" ],
-        "decoys" : [ "neat","team","omit","tame","mate","idem","mile","lime","tire","exit" ]
-    },
-
-    {
-        "words"  : [ "spat","past","pats","taps" ],
-        "decoys" : [ "pots","laps","step","lets","pint","atop","tapa","rapt","swap","yaps" ]
-    },
-
-    {
-        "words"  : [ "nest","sent","nets","tens" ],
-        "decoys" : [ "tend","went","lent","teen","neat","ante","tone","newt","vent","elan" ]
-    },
-
-    {
-        "words"  : [ "pale","leap","plea","peal" ],
-        "decoys" : [ "sale","pail","play","lips","slip","pile","pleb","pled","help","lope" ]
-    },
-
-    {
-        "words"  : [ "races","cares","scare","acres" ],
-        "decoys" : [ "crass","scary","seeds","score","screw","cager","clear","recap","trace","cadre" ]
-    },
-
-    {
-        "words"  : [ "bowel","elbow","below","beowl" ],
-        "decoys" : [ "bowed","bower","robed","probe","roble","bowls","blows","brawl","bylaw","ebola" ]
-    },
-
-    {
-        "words"  : [ "dates","stead","sated","adset" ],
-        "decoys" : [ "seats","diety","seeds","today","sited","dotes","tides","duets","deist","diets" ]
-    },
-
-    {
-        "words"  : [ "spear","parse","reaps","pares" ],
-        "decoys" : [ "ramps","tarps","strep","spore","repos","peris","strap","perms","ropes","super" ]
-    },
-
-    {
-        "words"  : [ "stone","tones","steno","onset" ],
-        "decoys" : [ "snout","tongs","stent","tense","terns","santo","stony","toons","snort","stint" ]
-    }
-]
