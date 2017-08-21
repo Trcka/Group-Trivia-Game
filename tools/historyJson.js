@@ -101,7 +101,7 @@ var history = {
 "category": "History",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Which Apollo mission was the last one in NASA&#039;s Apollo program?",
+"question": "Which Apollo mission was the last one in NASAs Apollo program?",
 "correct_answer": "Apollo 17",
 "incorrect_answers": [
 "Apollo 13",
@@ -161,7 +161,7 @@ var history = {
 "category": "History",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Against which country did the Dutch Republic fight the Eighty Years&#039; War?",
+"question": "Against which country did the Dutch Republic fight the Eighty Years War?",
 "correct_answer": "Spain",
 "incorrect_answers": [
 "France",

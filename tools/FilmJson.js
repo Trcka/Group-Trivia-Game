@@ -5,7 +5,7 @@ var film = {
 "category": "Entertainment: Film",
 "type": "multiple",
 "difficulty": "easy",
-"question": "Who starred as Bruce Wayne and Batman in Tim Burton&#039;s 1989 movie &quot;Batman&quot;?",
+"question": "Who starred as Bruce Wayne and Batman in Tim Burtons 1989 movie &quot;Batman&quot;?",
 "correct_answer": "Michael Keaton",
 "incorrect_answers": [
 "George Clooney",
@@ -65,7 +65,7 @@ var film = {
 "category": "Entertainment: Film",
 "type": "multiple",
 "difficulty": "easy",
-"question": "What is the orange and white bot&#039;s name in &quot;Star Wars: The Force Awakens&quot;?",
+"question": "What is the orange and white bots name in &quot;Star Wars: The Force Awakens&quot;?",
 "correct_answer": "BB-8",
 "incorrect_answers": [
 "BB-3",
@@ -106,7 +106,7 @@ var film = {
 "incorrect_answers": [
 "The Girl with the Dragon Tattoo",
 "Thor",
-"The King&#039;s Speech"
+"The Kings Speech"
 ]
 },
 {
@@ -185,7 +185,7 @@ var film = {
 "category": "Entertainment: Film",
 "type": "multiple",
 "difficulty": "medium",
-"question": "What type of cheese, loved by Wallace and Gromit, had it&#039;s sale prices rise after their successful short films?",
+"question": "What type of cheese, loved by Wallace and Gromit, had its sale prices rise after their successful short films?",
 "correct_answer": "Wensleydale",
 "incorrect_answers": [
 "Cheddar",
@@ -201,7 +201,7 @@ var film = {
 "correct_answer": "To replace Picard as a Romulan Agent",
 "incorrect_answers": [
 "To destroy the Enterprise",
-"To become Picard&#039;s friend ",
+"To become Picards friend ",
 "To steal the Enterprise"
 ]
 },

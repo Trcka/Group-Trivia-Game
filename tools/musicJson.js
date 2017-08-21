@@ -17,7 +17,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Which French duo had UK hits in 1998 with the songs &#039;Sexy Boy&#039;, &#039;Kelly Watch The Stars&#039; &amp; &#039;All I Need&#039;?",
+"question": "Which French duo had UK hits in 1998 with the songs Sexy Boy, Kelly Watch The Stars &amp; All I Need?",
 "correct_answer": "Air",
 "incorrect_answers": [
 "Fire",
@@ -29,7 +29,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Who is the founder and leader of industrial rock band, &#039;Nine Inch Nails&#039;?",
+"question": "Who is the founder and leader of industrial rock band, Nine Inch Nails?",
 "correct_answer": "Trent Reznor",
 "incorrect_answers": [
 "Marilyn Manson",
@@ -41,7 +41,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Which Elton John hit starts with the line &#039;When are you gonna come down&#039;?",
+"question": "Which Elton John hit starts with the line When are you gonna come down?",
 "correct_answer": "Goodbye Yellow Brick Road",
 "incorrect_answers": [
 "Rocket Man",
@@ -53,7 +53,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "hard",
-"question": "Who recorded the1975 album &#039;Captain Fantastic and the Brown Dirt Cowboy&#039;?",
+"question": "Who recorded the1975 album Captain Fantastic and the Brown Dirt Cowboy?",
 "correct_answer": "Elton John",
 "incorrect_answers": [
 "John Denver",
@@ -78,7 +78,7 @@ var music = {
 "type": "multiple",
 "difficulty": "hard",
 "question": "Which M83 album is the song &quot;Midnight City&quot; featured in?",
-"correct_answer": "Hurry Up, We&#039;re Dreaming",
+"correct_answer": "Hurry Up, Were Dreaming",
 "incorrect_answers": [
 "Saturdays = Youth",
 "Before the Dawn Heals Us",
@@ -89,7 +89,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "easy",
-"question": "Which famous rapper is featured in Jack &Uuml; (Skrillex and Diplo)&#039;s 2015 single called &quot;Febreze&quot;?",
+"question": "Which famous rapper is featured in Jack &Uuml; (Skrillex and Diplo)s 2015 single called &quot;Febreze&quot;?",
 "correct_answer": "2 Chainz",
 "incorrect_answers": [
 "Kendrick Lamar",
@@ -137,7 +137,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "easy",
-"question": "What was the name of singer Frank Ocean&#039;s second studio album, which was released on August 20, 2016?",
+"question": "What was the name of singer Frank Oceans second studio album, which was released on August 20, 2016?",
 "correct_answer": "Blonde",
 "incorrect_answers": [
 "Brunette",
@@ -185,7 +185,7 @@ var music = {
 "category": "Entertainment: Music",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Which song in Drake&#039;s &quot;Views&quot; features Future?",
+"question": "Which song in Drakes &quot;Views&quot; features Future?",
 "correct_answer": "Grammys",
 "incorrect_answers": [
 "Too Good",

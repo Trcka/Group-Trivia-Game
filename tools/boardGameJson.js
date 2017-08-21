@@ -4,12 +4,12 @@ var board = {
 "category": "Entertainment: Board Games",
 "type": "multiple",
 "difficulty": "hard",
-"question": "The board game &#039;Monopoly&#039; is a variation of what board game?",
-"correct_answer": "The Landlord&#039;s Game",
+"question": "The board game Monopoly is a variation of what board game?",
+"correct_answer": "The Landlords Game",
 "incorrect_answers": [
 "Territorial Dispute",
 "Property Feud",
-"The Monopolist&#039;s Game"
+"The Monopolists Game"
 ]
 },
 {
@@ -52,7 +52,7 @@ var board = {
 "category": "Entertainment: Board Games",
 "type": "multiple",
 "difficulty": "easy",
-"question": "On a standard Monopoly board, which square is diagonally opposite &#039;Go&#039;? ",
+"question": "On a standard Monopoly board, which square is diagonally opposite Go? ",
 "correct_answer": "Free Parking",
 "incorrect_answers": [
 "Go to Jail",
@@ -88,7 +88,7 @@ var board = {
 "category": "Entertainment: Board Games",
 "type": "multiple",
 "difficulty": "hard",
-"question": "What is the world&#039;s oldest board game?",
+"question": "What is the worlds oldest board game?",
 "correct_answer": "Senet",
 "incorrect_answers": [
 "Chess",
@@ -148,7 +148,7 @@ var board = {
 "category": "Entertainment: Board Games",
 "type": "multiple",
 "difficulty": "hard",
-"question": "In standard Monopoly, what&#039;s the rent if you land on Park Place with no houses?",
+"question": "In standard Monopoly, whats the rent if you land on Park Place with no houses?",
 "correct_answer": "$35",
 "incorrect_answers": [
 "$30",
@@ -184,7 +184,7 @@ var board = {
 "category": "Entertainment: Board Games",
 "type": "multiple",
 "difficulty": "hard",
-"question": "What do you declare in Rīchi Mahjong when you&#039;ve drawn your winning tile?",
+"question": "What do you declare in Rīchi Mahjong when youve drawn your winning tile?",
 "correct_answer": "Tsumo",
 "incorrect_answers": [
 "Ron",
@@ -224,7 +224,7 @@ var board = {
 "correct_answer": "Overlay at least 2 Monsters of the Same Level",
 "incorrect_answers": [
 "Activate a Spell and Send Monsters to the Graveyard",
-"Add the Monsters&#039; Levels Together to Match the Xyz Monster",
+"Add the Monsters Levels Together to Match the Xyz Monster",
 "Banish A Number of Monsters From Your Hand And Deck"
 ]
 },

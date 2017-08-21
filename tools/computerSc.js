@@ -5,18 +5,18 @@ var computer = {
 "type": "multiple",
 "difficulty": "easy",
 "question": "In any programming language, what is the most common way to iterate through an array?",
-"correct_answer": "&#039;For&#039; loops",
+"correct_answer": "For loops",
 "incorrect_answers": [
-"&#039;If&#039; Statements",
-"&#039;Do-while&#039; loops",
-"&#039;While&#039; loops"
+"If Statements",
+"Do-while loops",
+"While loops"
 ]
 },
 {
 "category": "Science: Computers",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Which internet company began life as an online bookstore called &#039;Cadabra&#039;?",
+"question": "Which internet company began life as an online bookstore called Cadabra?",
 "correct_answer": "Amazon",
 "incorrect_answers": [
 "eBay",
@@ -52,7 +52,7 @@ var computer = {
 "category": "Science: Computers",
 "type": "multiple",
 "difficulty": "medium",
-"question": "Moore&#039;s law originally stated that the number of transistors on a microprocessor chip would double every...",
+"question": "Moores law originally stated that the number of transistors on a microprocessor chip would double every...",
 "correct_answer": "Year",
 "incorrect_answers": [
 "Four Years",
@@ -76,7 +76,7 @@ var computer = {
 "category": "Science: Computers",
 "type": "multiple",
 "difficulty": "easy",
-"question": "The programming language &#039;Swift&#039; was created to replace what other programming language?",
+"question": "The programming language Swift was created to replace what other programming language?",
 "correct_answer": "Objective-C",
 "incorrect_answers": [
 "C#",

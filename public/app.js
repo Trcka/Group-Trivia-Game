@@ -326,7 +326,6 @@ jQuery(function($){
             newWord : function(data) {
                 // Insert the new word into the DOM
                 $('#hostWord').text(data.word);
-                App.doTextFit('#hostWord');
 
                 // Update the data for the current round
                 App.Host.currentCorrectAnswer = data.answer;
@@ -396,7 +395,6 @@ jQuery(function($){
                 } else {
                     $('#hostWord').text( winner + ' Wins!!' );
                 }
-                App.doTextFit('#hostWord');
 
                 // Reset game data
                 App.Host.numPlayersInRoom = 0;
