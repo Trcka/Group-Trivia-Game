@@ -61,7 +61,7 @@ function hostStartGame(gameId) {
  * @param data Sent from the client. Contains the current round and gameId (room)
  */
 function hostNextRound(data) {
-    if(data.round < board.results.length ){
+    if(data.round < computer.results.length ){
         // Send a new set of words back to the host and players.
         sendWord(data.round, data.gameId);
     } else {
@@ -161,17 +161,17 @@ function getWordData(i){
     // The second element will be hidden in a list of decoys as the correct answer
 
     // Randomize the order of the decoy words and choose the first 5
-    var decoys = shuffle(board.results[i].incorrect_answers).slice(0,3);
+    var decoys = shuffle(computer.results[i].incorrect_answers).slice(0,3);
 
     // Pick a random spot in the decoy list to put the correct answer
     var rnd = Math.floor(Math.random() * 4);
-    decoys.splice(rnd, 0, board.results[i].correct_answer);
+    decoys.splice(rnd, 0, computer.results[i].correct_answer);
 
     // Package the words into a single object.
     var wordData = {
         round: i,
-        word : board.results[i].question,   // Displayed Word
-        answer : board.results[i].correct_answer, // Correct Answer
+        word : computer.results[i].question,   // Displayed Word
+        answer : computer.results[i].correct_answer, // Correct Answer
         list : decoys      // Word list for player (decoys and answer)
     };
 
@@ -202,13 +202,3 @@ function shuffle(array) {
 
     return array;
 }
-
-/**
- * Each element in the array provides data for a single round in the game.
- *
- * In each round, two random "words" are chosen as the host word and the correct answer.
- * Five random "decoys" are chosen to make up the list displayed to the player.
- * The correct answer is randomly inserted into the list of chosen decoys.
- *
- * @type {Array}
- */

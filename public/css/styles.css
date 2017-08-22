@@ -45,8 +45,8 @@ img.main {
     font-size: 2em;
     line-height: 1.2;
     text-align: center;
-    background-color: #8AD453;
-    white-space: nowrap;
+    background-color: rgba(0,0,0,.6);
+    white-space: normal;
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid transparent;
@@ -164,6 +164,10 @@ img.main {
 
 .info input#inputPlayerName {
     width: 90%;
+    background-color: rgba(0,0,0,.6);
+}
+.info input#inputGameId{
+  background-color: rgba(0,0,0,.6);
 }
 
 
@@ -228,7 +232,7 @@ img.main {
     border-bottom: 1px dotted white;
     font-weight: 400;
     font-size: 3em;
-    color: #AE37B2;
+    color: #ffffff ;
 }
 
 
@@ -243,11 +247,12 @@ img.main {
     font-family: 'Quicksand', sans-serif;
     white-space: normal;
     font-weight: 400;
-    font-size: 40px;
-    background-color: aqua;
+    font-size: 45px;
+    color:white;
+    background-color: rgba(0,0,0,.6);
     position: absolute;
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 80%;
     margin: auto;
     bottom: 0;
     left: 0;
